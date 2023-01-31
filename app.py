@@ -122,4 +122,4 @@ def Coronavirus():
     return render_template("Coronavirus.html", title="Coronavirus Prediction", navTitle="COVID-19 Detector", headText="Coronavirus Probability Detector", ImagePath="/static/VirusImage.png")
 
 if __name__ == '__main__':
-    app.run(threaded=True, debug=True)
+    app.run(debug=False,host='0.0.0.0')
